@@ -8,7 +8,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.5.6</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
 
     <groupId>com.javaproject</groupId>
@@ -119,12 +119,13 @@
 
     <distributionManagement>
         <repository>
-            <id>http://54.89.111.56:8081/repository/maven-releases/</id>
+            <id>nexus-releases</id>
             <url>http://54.89.111.56:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
-            <id>http://54.89.111.56:8081/repository/maven-snapshots/</id>
+            <id>nexus-snapshots</id>
             <url>http://54.89.111.56:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
+
 </project>
