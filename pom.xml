@@ -72,11 +72,6 @@
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.jacoco</groupId>
-            <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.8.7</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -118,14 +113,14 @@
     </build>
 
     <distributionManagement>
-        <repository>
-            <id>nexus</id>
-            <url>http://http://35.171.185.119:8081/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>nexus</id>
-            <url>http://http://35.171.185.119:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
+    <repository>
+        <id>nexus</id>
+        <url>http://35.171.185.119:8081/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+        <id>nexus</id>
+        <url>http://35.171.185.119:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+</distributionManagement>
 
 </project>
